@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Documentation - Chengyu Dataset</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #24292e;
+    background-color: #ffffff;
+    padding-bottom: 60px;
+  }
+  
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header {
+    background-color: #24292e;
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 0;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #d1d5da;
+    margin: 0;
+  }
+  
+  .nav-menu {
+    background-color: #f6f8fa;
+    border-bottom: 1px solid #e1e4e8;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .nav-menu a {
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #e1e4e8;
+  }
+  
+  .nav-menu .separator {
+    margin: 0 8px;
+    color: #d1d5da;
+  }
+  
+  .content {
+    padding: 0 0 40px 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px 0 20px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e1e4e8;
+  }
+  
+  h2:first-child {
+    margin-top: 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 15px 0;
+  }
+  
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+  }
+  
+  p {
+    margin: 0 0 15px 0;
+  }
+  
+  ul, ol {
+    margin: 0 0 15px 20px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  strong {
+    font-weight: 600;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  code {
+    background-color: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 85%;
+  }
+  
+  .info-box {
+    background-color: #f6f8fa;
+    border-left: 4px solid #0366d6;
+    padding: 10px 16px;
+    margin: 0 0 20px 0;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .info-box p {
+    margin: 0 0 8px 0;
+  }
+  
+  .info-box ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .info-box li {
+    margin-bottom: 4px;
+  }
+  
+  .footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e4e8;
+    color: #586069;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Datatable specific styles */
+  .dataTables_wrapper {
+    margin-top: 10px;
+  }
+  
+  table.dataTable thead th {
+    background-color: #2c5282;
+    color: white;
+    font-weight: 600;
+    padding: 6px 6px;
+    border-bottom: 2px solid #4299e1;
+    font-size: 14px;
+  }
+  
+  table.dataTable thead th,
+  table.dataTable tbody td {
+    max-width: 150px;
+    min-width: 100px;
+    width: 150px !important;
+  }
+  
+  table.dataTable tbody td {
+    padding: 4px 6px;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  
+  table.dataTable tbody tr:hover {
+    background-color: #f6f8fa;
+  }
+  
+  .dataTables_filter input {
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    padding: 5px 12px;
+    margin-left: 8px;
+  }
+  
+  .dt-buttons {
+    margin-bottom: 15px;
+  }
+  
+  .dt-button {
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  
+  .dt-button:hover {
+    background-color: #0256c7;
+  }
+  
+  .btn-default {
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .btn-default:hover {
+    background-color: #0256c7;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <h1>Dataset documentation</h1>
+      <p>Full variable descriptions and data sources</p>
+    </div>
+  </div>
+  <nav class="nav-menu">
+    <a href="index.html">Home</a>
+    <span class="separator">|</span>
+    <a href="data-browser.html">Browse data</a>
+    <span class="separator">|</span>
+    <a href="documentation.html">Documentation</a>
+  </nav>
+  <div class="container content">
+    <h2>
+      <em>Chengyu</em>
+       dataset: Information and native speaker ratings
+    </h2>
+    <h2>Overview and citation information</h2>
+    <p>
+      This dataset collates information about 1,015 
+      <em>chengyu</em>
+       成语 'Chinese idiomatic expressions', including expression-level information and native speaker ratings. The dataset was compiled as part of my PhD research (Davey, 2026b) investigating how first-language (L1) Chinese language users understand 
+      <em>chengyu</em>
+       as a category.
+    </p>
+    <p>Data is collated from multiple sources:</p>
+    <ul>
+      <li>Original native speaker ratings from 196 L1 Chinese respondents: RC 2 in Davey (2026b)</li>
+      <li>Original experimental data from 59 L1 Chinese participants: RC 3 in Davey (2026b)</li>
+      <li>Published descriptive norms from Li et al. (2016), Zhang &amp; Ji (2016), Zheng (2019), and Zheng et al. (2022)</li>
+      <li>Frequency data from four major Chinese corpora (BCC, CCL, zhTenTen17, GigaWord 2)</li>
+      <li>Structural and semantic information from dictionaries, including Jiao et al. (2011), 成语词典 (Jnqz, 2025) and 汉典 (Zdic, 2025)</li>
+    </ul>
+    <h3>How to cite this dataset</h3>
+    <p>When using this dataset, please cite:</p>
+    <blockquote>
+      Davey, J. (2026a). 
+      <em>Chengyu dataset: Information and native speaker ratings</em>
+       [Data set]. Open Science Framework. 
+      <a href="https://doi.org/10.17605/OSF.IO/3TDA7">https://doi.org/10.17605/OSF.IO/3TDA7</a>
+    </blockquote>
+    <h3>Primary research</h3>
+    <p>This dataset was compiled as part of the following research:</p>
+    <blockquote>
+      Davey, J. (2026b). 
+      <em>What makes a chengyu? Native speaker intuitions for categorising Chinese idiomatic expressions</em>
+       [Doctoral dissertation submitted for examination, Australian National University].
+    </blockquote>
+    <p>When reporting findings based on this dataset, please cite the dataset itself (above). The thesis citation provides theoretical and methodological context for the research design and data collection.</p>
+    <h3>Citing data subsets</h3>
+    <p>When using specific subsets of data from this dataset, please acknowledge the original sources in addition to citing this dataset. For example:</p>
+    <ul>
+      <li>Original empirical data: Cite this dataset (Davey, 2026a) and Davey (2026b)</li>
+      <li>Published descriptive norms: Cite this dataset (Davey, 2026a) and the relevant original publication (Li et al., 2016; Zhang &amp; Ji, 2016; Zheng, 2019; or Zheng et al., 2022)</li>
+      <li>Linguistic information: Cite this dataset (Davey, 2026a) and the relevant dictionary source (Jiao et al., 2011; Jnqz, 2025; or Zdic, 2025)</li>
+    </ul>
+    <p>Source information for all variables is provided below.</p>
+    <p>
+      <strong>Data availability</strong>
+      : This dataset is made freely available for non-commercial research and educational purposes, licensed under a Creative Commons CC-BY-NC 4.0 Licence.
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : The dataset contains information about 1,015 
+      <em>chengyu</em>
+      , including the 500 expressions in Jiao et al. (2011) plus another 515 expressions from my PhD research (Davey, 2026b) and other published sources. Some measures are available for all expressions, while others cover specific subsets as detailed below.
+    </p>
+    <h3>Version information</h3>
+    <p>
+      <strong>Dataset version</strong>
+      : 1.0
+    </p>
+    <p>
+      <strong>Last updated</strong>
+      : 16/01/2026
+    </p>
+    <p>
+      <strong>Compiled by</strong>
+      : Janet Davey
+    </p>
+    <p>
+      <strong>Contact</strong>
+      : main.gem4761@fastmail.com
+    </p>
+    <p>For questions about this dataset or to report errors, please contact main.gem4761@fastmail.com.</p>
+    <h2>Expression information variables</h2>
+    <h3>Core identifiers</h3>
+    <h4>Expression</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>expression</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Multiple
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : The 
+      <em>chengyu</em>
+       in simplified Chinese characters
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>Pinyin</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>pinyin</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Multiple
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Romanisation of the expression using Hanyu Pinyin
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h3>Semantic information</h3>
+    <h4>Explanation (Zdic)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>explanation_zdic</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zdic 汉典 (Zdic, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Explanation of the expression's meaning in Chinese
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>Explanation (Jnqz)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>explanation_jnqz</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Explanation of the expression's meaning in Chinese
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,008
+    </p>
+    <h4>Translation (Jiao et al.)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>translation_jiao</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Jiao et al. (2011)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : English translation
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=500
+    </p>
+    <h4>Translation (Pleco)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>translation_pleco</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Pleco Chinese Dictionary
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : English translation or gloss
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>Near synonyms (Zdic)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>near_synonyms_zdic</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zdic 汉典 (Zdic, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Expressions with similar meanings
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=881
+    </p>
+    <h4>Near synonyms (Jiao et al.)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>near_synonyms_jiao</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Jiao et al. (2011)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Expressions with similar meanings
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=461
+    </p>
+    <h4>Near synonyms (Jnqz)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>near_synonyms_jnqz</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Expressions with similar meanings
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=998
+    </p>
+    <h4>Antonyms (Jnqz)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>antonyms_jnqz</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Expressions with opposite meanings
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=976
+    </p>
+    <h4>Sentiment (Jnqz)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>sentiment_jnqz</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Emotional colouring or sentiment of the expression
+    </p>
+    <p>
+      <strong>Categories</strong>
+      : 褒义成语 (commendatory/positive), 中性成语 (neutral), 贬义成语 (derogatory/negative)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,004
+    </p>
+    <h3>Structural and syntactic information</h3>
+    <p>
+      Full structural information including syntactic structure classifications from multiple sources, symmetry patterns, and 
+      <em>xingshi</em>
+       patterns. See the 
+      <a href="data-browser.html">data browser</a>
+       for all variables.
+    </p>
+    <h3>Etymology and historical information</h3>
+    <p>Historical origins, dynastic periods, source texts, and usage contexts from dictionary sources.</p>
+    <h3>Character-level information</h3>
+    <p>Individual character frequencies, stroke counts, and rankings for each of the four constituent characters.</p>
+    <h3>Corpus frequency data</h3>
+    <p>Raw and normalised frequencies from BCC, CCL, zhTenTen17, and GigaWord 2 corpora, plus frequency level classifications.</p>
+    <h3>Native speaker ratings</h3>
+    <p>
+      Recognition, 
+      <em>chengyu</em>
+       acceptability, compositionality, character awareness, and other psycholinguistic measures from original research and published norms.
+    </p>
+    <h2>Notes on partial data coverage</h2>
+    <p>The dataset includes variables with varying coverage across the 1,015 expressions. This reflects the integration of data from multiple independent studies with different research aims and sampling strategies. Partial coverage does not indicate missing data but rather the scope of each original study.</p>
+    <h3>Understanding coverage patterns</h3>
+    <ul>
+      <li>
+        <strong>Complete coverage (n=1,015)</strong>
+        : Core identifiers, frequency measures from four corpora, 
+        <em>xingshi</em>
+         patterns, constituent characters and their frequency ranks
+      </li>
+      <li>
+        <strong>Near complete coverage (n &gt; 977)</strong>
+        : Jnqz dictionary information (explanations, etymology, synonyms, antonyms, examples, usage notes, syntactic structure, sentiment, commonality indicator)
+      </li>
+      <li>
+        <strong>Substantial coverage (n=500)</strong>
+        : RC 2 ratings, Jiao et al. (2011) information
+      </li>
+      <li>
+        <strong>Published norms (n=237-350)</strong>
+        : Zheng (2019), Zhang &amp; Ji (2016), Li et al. (2016) measures
+      </li>
+      <li>
+        <strong>Focused subsets (n=24-48)</strong>
+        : RC 3 experimental stimuli, Zheng et al. (2022) measures
+      </li>
+    </ul>
+    <h3>Value of partial data</h3>
+    <p>Partial data serves multiple purposes:</p>
+    <ol>
+      <li>
+        <strong>Enrichment</strong>
+        : Even when available for only some expressions, additional measures provide valuable information for those items (e.g., etymology, example sentences, L2 familiarity)
+      </li>
+      <li>
+        <strong>Triangulation</strong>
+        : Multiple operationalisations of similar constructs (e.g., compositionality from RC 2, Zheng 2019, and Zhang &amp; Ji 2016) allow comparison across methods and populations
+      </li>
+      <li>
+        <strong>Gap identification</strong>
+        : Absent measures for certain expressions highlight opportunities for future research
+      </li>
+      <li>
+        <strong>Methodological diversity</strong>
+        : Different measurement approaches (rating scales, completion tasks, binary judgements, reaction times) provide converging evidence through complementary methodologies
+      </li>
+    </ol>
+    <h3>Using partial data</h3>
+    <p>When using this dataset:</p>
+    <ul>
+      <li>Check coverage for your variables of interest</li>
+      <li>Document which subset you analyse</li>
+      <li>Consider whether missing data is random or systematic (e.g., RC 3 stimuli were selected to vary on specific dimensions)</li>
+      <li>Cite both this dataset and the original sources for any measures you use</li>
+    </ul>
+    <div class="footer">
+      <p>For the complete variable list with full descriptions, please download the dataset or refer to the accompanying documentation files.</p>
+    </div>
+  </div>
+</body>
+</html>

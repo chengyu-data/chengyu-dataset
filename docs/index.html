@@ -1,11 +1,503 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Chengyu Dataset</title>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chengyu Dataset - Native Speaker Ratings</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #24292e;
+    background-color: #ffffff;
+    padding-bottom: 60px;
+  }
+  
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header {
+    background-color: #24292e;
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 0;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #d1d5da;
+    margin: 0;
+  }
+  
+  .nav-menu {
+    background-color: #f6f8fa;
+    border-bottom: 1px solid #e1e4e8;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .nav-menu a {
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #e1e4e8;
+  }
+  
+  .nav-menu .separator {
+    margin: 0 8px;
+    color: #d1d5da;
+  }
+  
+  .content {
+    padding: 0 0 40px 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px 0 20px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e1e4e8;
+  }
+  
+  h2:first-child {
+    margin-top: 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 15px 0;
+  }
+  
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+  }
+  
+  p {
+    margin: 0 0 15px 0;
+  }
+  
+  ul, ol {
+    margin: 0 0 15px 20px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  strong {
+    font-weight: 600;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  code {
+    background-color: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 85%;
+  }
+  
+  .info-box {
+    background-color: #f6f8fa;
+    border-left: 4px solid #0366d6;
+    padding: 10px 16px;
+    margin: 0 0 20px 0;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .info-box p {
+    margin: 0 0 8px 0;
+  }
+  
+  .info-box ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .info-box li {
+    margin-bottom: 4px;
+  }
+  
+  .footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e4e8;
+    color: #586069;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Datatable specific styles */
+  .dataTables_wrapper {
+    margin-top: 10px;
+  }
+  
+  table.dataTable thead th {
+    background-color: #2c5282;
+    color: white;
+    font-weight: 600;
+    padding: 6px 6px;
+    border-bottom: 2px solid #4299e1;
+    font-size: 14px;
+  }
+  
+  table.dataTable thead th,
+  table.dataTable tbody td {
+    max-width: 150px;
+    min-width: 100px;
+    width: 150px !important;
+  }
+  
+  table.dataTable tbody td {
+    padding: 4px 6px;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  
+  table.dataTable tbody tr:hover {
+    background-color: #f6f8fa;
+  }
+  
+  .dataTables_filter input {
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    padding: 5px 12px;
+    margin-left: 8px;
+  }
+  
+  .dt-buttons {
+    margin-bottom: 15px;
+  }
+  
+  .dt-button {
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  
+  .dt-button:hover {
+    background-color: #0256c7;
+  }
+  
+  .btn-default {
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .btn-default:hover {
+    background-color: #0256c7;
+  }
+</style>
 </head>
 <body>
-    <h1>Chengyu Dataset</h1>
-    <p>Coming soon...</p>
+  <div class="header">
+    <div class="container">
+      <h1>Chengyu dataset: Information and native speaker ratings</h1>
+      <p>Linguistic information and native speaker ratings for 1,015 chengyu 成语</p>
+    </div>
+  </div>
+  <nav class="nav-menu">
+    <a href="index.html">Home</a>
+    <span class="separator">|</span>
+    <a href="data-browser.html">Browse data</a>
+    <span class="separator">|</span>
+    <a href="documentation.html">Documentation</a>
+  </nav>
+  <div class="container content">
+    <h2>About this dataset</h2>
+    <p>
+      This dataset provides linguistic information and native speaker ratings for 1,015 
+      <em>chengyu</em>
+       成语 'Chinese idiomatic expressions'. The data were compiled as part of PhD research (Davey, 2026b) investigating how first-language (L1) Chinese users understand and categorise 
+      <em>chengyu</em>
+      .
+    </p>
+    <h3>
+      What are 
+      <em>chengyu</em>
+      ?
+    </h3>
+    <p>
+      <em>Chengyu</em>
+       成语 (literally 'set phrases') are conventionalised four-character expressions that often derive from classical Chinese texts, historical events, or stories. While Chinese dictionaries include tens of thousands of 
+      <em>chengyu</em>
+      , native speakers often disagree about which expressions genuinely belong to this culturally salient category.
+    </p>
+    <h2>Research findings</h2>
+    <p>
+      This research provides empirical evidence that Chinese language users conceptualise 
+      <em>chengyu</em>
+       differently than authoritative dictionaries suggest. Through three complementary studies with over 200 native Chinese speakers, the research reveals:
+    </p>
+    <ul>
+      <li>
+        <strong>Dictionary classifications don't predict native speaker judgements</strong>
+        : Dictionary-listed 
+        <em>chengyu</em>
+         were rejected 40% of the time
+      </li>
+      <li>
+        <strong>Semantic opacity matters</strong>
+        : Expressions with transparent, compositional meanings were less likely to be accepted as genuine 
+        <em>chengyu</em>
+      </li>
+      <li>
+        <strong>Structural irregularity is valued</strong>
+        : Regular patterns like AABB reduplication (e.g., 
+        <em>fengfengyuyu</em>
+         风风雨雨) were consistently rejected as 
+        <em>chengyu</em>
+        , while irregular ABCD patterns were preferred
+      </li>
+      <li>
+        <strong>Individual variation is substantial</strong>
+        : Educational background and Chinese language knowledge significantly influenced the perceived scope of the 
+        <em>chengyu</em>
+         category
+      </li>
+      <li>
+        <strong>Intuitive recognition is fast</strong>
+        : Mean reaction time of 1,133 ms suggests 
+        <em>chengyu</em>
+         categorisation is predominantly intuitive rather than analytical
+      </li>
+    </ul>
+    <p>
+      The findings challenge assumptions that 
+      <em>chengyu</em>
+       can be defined by formal linguistic criteria alone, instead revealing them as a culturally negotiated category with flexible but recognisable boundaries.
+    </p>
+    <h2>Dataset contents</h2>
+    <h3>Original empirical data (Davey, 2026b)</h3>
+    <ul>
+      <li>
+        <strong>Native speaker ratings</strong>
+         (n=196 respondents): Recognition, 
+        <em>chengyu</em>
+         acceptability, compositionality, and character engagement ratings for 500 common expressions
+      </li>
+      <li>
+        <strong>Experimental acceptability judgements</strong>
+         (n=59 participants): Timed binary 
+        <em>chengyu</em>
+         acceptability decisions with reaction times for 96 expressions
+      </li>
+    </ul>
+    <h3>Published descriptive norms</h3>
+    <ul>
+      <li>Psycholinguistic ratings from Li et al. (2016), Zhang &amp; Ji (2016), Zheng (2019), and Zheng et al. (2022)</li>
+      <li>Familiarity, meaningfulness, compositionality, literality, predictability, and L2 knowledge ratings</li>
+    </ul>
+    <h3>Corpus frequency data</h3>
+    <ul>
+      <li>Raw and normalised frequencies from four major Chinese corpora:</li>
+      <ul>
+        <li>BCC (9.5 billion characters)</li>
+        <li>CCL (4.75 billion characters)</li>
+        <li>zhTenTen17 (16.59 billion characters)</li>
+        <li>GigaWord 2 (250 million characters)</li>
+      </ul>
+    </ul>
+    <h3>Linguistic information</h3>
+    <ul>
+      <li>
+        <strong>Semantic information</strong>
+        : Chinese explanations, English translations, synonyms, antonyms, sentiment
+      </li>
+      <li>
+        <strong>Structural features</strong>
+        : Syntactic structure, structural symmetry, 
+        <em>xingshi</em>
+         形式 patterns (ABCD, AABB, etc.)
+      </li>
+      <li>
+        <strong>Etymology</strong>
+        : Historical origins, dynastic periods, source texts
+      </li>
+      <li>
+        <strong>Character-level data</strong>
+        : Individual character frequency ranks, stroke counts
+      </li>
+    </ul>
+    <h2>Coverage</h2>
+    <p>The 1,015 expressions in this dataset include the 500 expressions in Jiao et al.'s (2011) annotated frequency dictionary, plus 515 expressions from my PhD research and other published sources. Variable coverage ranges from complete (n=1,015) to focused subsets (n=24–500), reflecting integration of data from multiple independent studies with different research aims.</p>
+    <h2>Repository contents</h2>
+    <ul>
+      <li>
+        <strong>
+          <code>data/</code>
+        </strong>
+        : The dataset and documentation files
+      </li>
+      <ul>
+        <li>
+          <code>Chengyu dataset.xlsx</code>
+           - Full dataset (67 variables × 1,015 expressions)
+        </li>
+      </ul>
+      <li>
+        <strong>
+          <code>docs/</code>
+        </strong>
+        : Interactive HTML browser (see GitHub Pages site)
+      </li>
+      <ul>
+        <li>
+          <code>index.html</code>
+           - Project overview and quick links
+        </li>
+        <li>
+          <code>data-browser.html</code>
+           - Interactive searchable datatable
+        </li>
+        <li>
+          <code>documentation.html</code>
+           - Full documentation with all variable descriptions
+        </li>
+      </ul>
+    </ul>
+    <h2>Intended uses</h2>
+    <p>This dataset supports research in:</p>
+    <ul>
+      <li>
+        <strong>Linguistics</strong>
+        : Phraseology, categorisation, semantic opacity, multiword expressions
+      </li>
+      <li>
+        <strong>Psycholinguistics</strong>
+        : Native speaker intuitions, processing, acceptability judgements
+      </li>
+      <li>
+        <strong>Chinese pedagogy</strong>
+        : Evidence-based approaches to teaching 
+        <em>chengyu</em>
+      </li>
+      <li>
+        <strong>Corpus linguistics</strong>
+        : Frequency patterns, usage analysis
+      </li>
+      <li>
+        <strong>Computational linguistics</strong>
+        : 
+        <em>Chengyu</em>
+         identification, semantic analysis
+      </li>
+    </ul>
+    <h2>Citation and access</h2>
+    <h3>How to cite this dataset</h3>
+    <p>When using this dataset, please cite:</p>
+    <blockquote>
+      Davey, J. (2026a). 
+      <em>Chengyu dataset: Information and native speaker ratings</em>
+       [Data set]. Open Science Framework. 
+      <a href="https://doi.org/10.17605/OSF.IO/3TDA7">https://doi.org/10.17605/OSF.IO/3TDA7</a>
+    </blockquote>
+    <h3>Primary research</h3>
+    <p>This dataset was compiled as part of the following research:</p>
+    <blockquote>
+      Davey, J. (2026b). 
+      <em>What makes a chengyu? Native speaker intuitions for categorising Chinese idiomatic expressions</em>
+       [Doctoral dissertation submitted for examination, Australian National University].
+    </blockquote>
+    <p>When reporting findings based on this dataset, please cite the dataset itself (above). The thesis citation provides theoretical and methodological context for the research design and data collection.</p>
+    <h3>Citing data subsets</h3>
+    <p>When using specific subsets of data, please acknowledge the original sources in addition to citing this dataset. For example:</p>
+    <ul>
+      <li>Original empirical data: Cite this dataset (Davey, 2026a) and Davey (2026b)</li>
+      <li>Published descriptive norms: Cite this dataset (Davey, 2026a) and the relevant original publication (Li et al., 2016; Zhang &amp; Ji, 2016; Zheng, 2019; or Zheng et al., 2022)</li>
+      <li>Linguistic information: Cite this dataset (Davey, 2026a) and the relevant dictionary source (Jiao et al., 2011; Jnqz, 2025; or Zdic, 2025)</li>
+    </ul>
+    <p>Source information for all variables is provided in the documentation.</p>
+    <h2>Data availability</h2>
+    <p>This dataset is made freely available for non-commercial research and educational purposes under a Creative Commons CC-BY-NC 4.0 Licence.</p>
+    <p>
+      <strong>Permanent identifier</strong>
+      : 
+      <a href="https://doi.org/10.17605/OSF.IO/3TDA7">https://doi.org/10.17605/OSF.IO/3TDA7</a>
+    </p>
+    <p>
+      <strong>Repository</strong>
+      : 
+      <a href="https://doi.org/10.17605/OSF.IO/3TDA7">Open Science Framework (OSF)</a>
+    </p>
+    <p>
+      <strong>Interactive browser</strong>
+      : 
+      <a href="https://chengyu-data.github.io/chengyu-dataset">GitHub Pages</a>
+    </p>
+    <p>
+      <strong>Format</strong>
+      : Microsoft Excel (.xlsx) with 67 variables
+    </p>
+    <p>
+      <strong>Documentation</strong>
+      : Full variable descriptions, measurement details, source information, and references
+    </p>
+    <h2>Contact</h2>
+    <p>
+      <strong>Compiled by</strong>
+      : Janet Davey
+    </p>
+    <p>
+      <strong>Email</strong>
+      : main.gem4761@fastmail.com
+    </p>
+    <p>
+      <strong>Institution</strong>
+      : Australian National University
+    </p>
+    <p>For questions about this dataset or to report errors, please contact main.gem4761@fastmail.com</p>
+    <div class="footer">
+      <p>Dataset version 1.0 | Last updated: 16/01/2026</p>
+    </div>
+  </div>
 </body>
 </html>
