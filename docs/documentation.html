@@ -306,6 +306,61 @@
       <em>chengyu</em>
       , including the 500 expressions in Jiao et al. (2011) plus another 515 expressions from my PhD research (Davey, 2026b) and other published sources. Some measures are available for all expressions, while others cover specific subsets as detailed below.
     </p>
+    <h2>Notes on partial data coverage</h2>
+    <p>The dataset includes variables with varying coverage across the 1,015 expressions. This reflects the integration of data from multiple independent studies with different research aims and sampling strategies. Partial coverage does not indicate missing data but rather the scope of each original study.</p>
+    <h3>Understanding coverage patterns</h3>
+    <ul>
+      <li>
+        <strong>Complete coverage (n=1,015)</strong>
+        : Core identifiers, frequency measures from four corpora, 
+        <em>xingshi</em>
+         patterns, constituent characters and their frequency ranks
+      </li>
+      <li>
+        <strong>Near complete coverage (n &gt; 977)</strong>
+        : Jnqz dictionary information (explanations, etymology, synonyms, antonyms, examples, usage notes, syntactic structure, sentiment, commonality indicator)
+      </li>
+      <li>
+        <strong>Substantial coverage (n=500)</strong>
+        : RC 2 ratings, Jiao et al. (2011) information
+      </li>
+      <li>
+        <strong>Published norms (n=237-350)</strong>
+        : Zheng (2019), Zhang &amp; Ji (2016), Li et al. (2016) measures
+      </li>
+      <li>
+        <strong>Focused subsets (n=24-48)</strong>
+        : RC 3 experimental stimuli, Zheng et al. (2022) measures
+      </li>
+    </ul>
+    <h3>Value of partial data</h3>
+    <p>Partial data serves multiple purposes:</p>
+    <ol>
+      <li>
+        <strong>Enrichment</strong>
+        : Even when available for only some expressions, additional measures provide valuable information for those items (e.g., etymology, example sentences, L2 familiarity)
+      </li>
+      <li>
+        <strong>Triangulation</strong>
+        : Multiple operationalisations of similar constructs (e.g., compositionality from RC 2, Zheng 2019, and Zhang &amp; Ji 2016) allow comparison across methods and populations
+      </li>
+      <li>
+        <strong>Gap identification</strong>
+        : Absent measures for certain expressions highlight opportunities for future research
+      </li>
+      <li>
+        <strong>Methodological diversity</strong>
+        : Different measurement approaches (rating scales, completion tasks, binary judgements, reaction times) provide converging evidence through complementary methodologies
+      </li>
+    </ol>
+    <h3>Using partial data</h3>
+    <p>When using this dataset:</p>
+    <ul>
+      <li>Check coverage for your variables of interest</li>
+      <li>Document which subset you analyse</li>
+      <li>Consider whether missing data is random or systematic (e.g., RC 3 stimuli were selected to vary on specific dimensions)</li>
+      <li>Cite both this dataset and the original sources for any measures you use</li>
+    </ul>
     <h3>Version information</h3>
     <p>
       <strong>Dataset version</strong>
@@ -313,7 +368,7 @@
     </p>
     <p>
       <strong>Last updated</strong>
-      : 16/01/2026
+      : 19/01/2026
     </p>
     <p>
       <strong>Compiled by</strong>
@@ -532,82 +587,1454 @@
       : n=1,004
     </p>
     <h3>Structural and syntactic information</h3>
+    <h4>Syntactic structure (Zdic)</h4>
     <p>
-      Full structural information including syntactic structure classifications from multiple sources, symmetry patterns, and 
-      <em>xingshi</em>
-       patterns. See the 
-      <a href="data-browser.html">data browser</a>
-       for all variables.
+      <strong>Variable name</strong>
+      : 
+      <code>syntactic_structure_zdic</code>
     </p>
-    <h3>Etymology and historical information</h3>
-    <p>Historical origins, dynastic periods, source texts, and usage contexts from dictionary sources.</p>
-    <h3>Character-level information</h3>
-    <p>Individual character frequencies, stroke counts, and rankings for each of the four constituent characters.</p>
-    <h3>Corpus frequency data</h3>
-    <p>Raw and normalised frequencies from BCC, CCL, zhTenTen17, and GigaWord 2 corpora, plus frequency level classifications.</p>
-    <h3>Native speaker ratings</h3>
     <p>
-      Recognition, 
+      <strong>Source</strong>
+      : Zdic 汉典 (Zdic, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Syntactic structure classification using Chinese grammatical categories
+    </p>
+    <p>
+      <strong>Categories</strong>
+      : 联合式 (coordinate structure), 主谓式 (subject-predicate structure), 偏正式 (modifier-modified structure), 动宾式 (verb-object structure), 连动式 (serial verb structure), 补充式 (complement structure), 紧缩式 (abbreviated structure), 复句式 (compound structure), 复杂式 (complex structure)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=901
+    </p>
+    <h4>Syntactic structure (Jnqz)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>syntactic_structure_jnqz</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Syntactic structure classification using Chinese grammatical categories
+    </p>
+    <p>
+      <strong>Categories</strong>
+      : 联合式 (coordinate structure), 主谓式 (subject-predicate structure), 偏正式 (modifier-modified structure), 动宾式 (verb-object structure), 连动式 (serial verb structure), 补充式 (complement structure), 紧缩式 (abbreviated structure), 复句式 (compound structure), 复杂式 (complex structure)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,005
+    </p>
+    <p>
+      <strong>Note</strong>
+      : The dataset includes syntactic structure classifications from both 成语词典 (Jnqz, 2025) and the Zdic 汉典 online dictionary (Zdic, 2025) because syntactic structure categorisation for 
       <em>chengyu</em>
-       acceptability, compositionality, character awareness, and other psycholinguistic measures from original research and published norms.
+       is not universally standardised across reference works, and where sources disagree, users can make informed decisions based on their own analytical frameworks.
     </p>
-    <h2>Notes on partial data coverage</h2>
-    <p>The dataset includes variables with varying coverage across the 1,015 expressions. This reflects the integration of data from multiple independent studies with different research aims and sampling strategies. Partial coverage does not indicate missing data but rather the scope of each original study.</p>
-    <h3>Understanding coverage patterns</h3>
+    <h4>Structure (Li et al. 2016)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>structure_li2016</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Li et al. (2016)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Syntactic structure classification following Li et al.'s (2016) categories
+    </p>
+    <p>
+      <strong>Categories</strong>
+      : VO (verb-object), SM (structure of modification), SV (subject-predicate), VV (verb-verb), VOVO, SMSM, SVSV (indicating both pairs of characters follow the same pattern)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=350
+    </p>
+    <h4>Structural symmetry</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>symmetric_structure</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Coded by researcher following Liu and Xing (2000) and Liu and Cheung (2014)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Whether the expression exhibits structural symmetry (
+      <em>duichenxing</em>
+       对称性)
+    </p>
+    <p>
+      <strong>Categories</strong>
+      : Binary (symmetric vs. asymmetric)
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Categorised as structurally symmetric when the first two characters and last two characters have identical syntactic constructions with corresponding word classes. This structural symmetry criterion is broader than syntactic parallelism (
+      <em>binglieshi</em>
+       并列式) alone, encompassing expressions with various semantic relationships (temporal, causal, or coordinative) provided the two halves are equally weighted.
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>Xingshi pattern</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>xingshi</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Structural pattern (
+      <em>xingshi</em>
+       形式) based on character repetition
+    </p>
+    <p>
+      <strong>Categories</strong>
+      : ABCD, AABB, AABC, ABAC, ABBC, ABCA, ABCB, ABCC
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>Usage (Zdic)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>usage_zdic</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zdic 汉典 (Zdic, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Usage guidance including grammatical function and pragmatic information about the expression
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=901
+    </p>
+    <h4>Usage (Jiao et al.)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>usage_jiao</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Jiao et al. (2011)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Usage guidance including grammatical function and pragmatic information about the expression
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=500
+    </p>
+    <h4>Usage (Jnqz)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>usage_jnqz</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Usage guidance including grammatical function and pragmatic information about the expression
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,004
+    </p>
+    <h4>Examples (Zdic)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>examples_zdic</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zdic 汉典 (Zdic, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Example sentences demonstrating usage
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=852
+    </p>
+    <h4>Examples (Jnqz)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>examples_jnqz</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Example sentences demonstrating usage
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,005
+    </p>
+    <h3>Etymology</h3>
+    <h4>Etymology (Zdic)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>etymology_zdic</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zdic 汉典 (Zdic, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Historical origin or etymological information about the expression, including source texts where applicable
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=947
+    </p>
+    <h4>Etymology (Jnqz)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>etymology_jnqz</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Historical origin or etymological information about the expression, including source texts where applicable
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,005
+    </p>
+    <h4>Dynasty</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>dynasty</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Coded by researcher based on etymology
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Dynastic period when the expression is thought to have originated. When the etymological information between 'etymology_zdic' and 'etymology_jnqz' conflicts, then the earliest attested period is used. Expressions from Buddhist texts (e.g., sutras) are coded as 'Buddhist', while those from foreign texts (e.g., Aesop's Fables, Arabian Nights) are coded as 'Foreign'. Left blank if unknown
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,005
+    </p>
+    <h4>Historicity</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>historicity</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Coded by researcher based on dynasty and etymology
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Categorisation of expressions into historical eras
+    </p>
+    <p>
+      <strong>Categories</strong>
+      : Ancient (–221 BCE; pre-Qin), Early Imperial (221 BCE–589 CE; Qin, Han, Three Kingdoms, Jin, Northern and Southern Dynasties), Middle Imperial (589–1368 CE; Sui, Tang, Five Dynasties and Ten Kingdoms, Song), Late Imperial (1368–1912 CE; Yuan, Ming, Qing), Modern (1912– )
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,005
+    </p>
+    <h3>Frequency measures</h3>
+    <h4>BCC raw frequency</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_bcc</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : BCC (Beijing Language and Culture University Chinese Corpus)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Raw token frequency in BCC
+    </p>
+    <p>
+      <strong>Corpus details</strong>
+      : 9.5 billion characters; news, social media, literature, technology, blog (compiled 2019)
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Frequency data extracted from BCC Global wordlist (combined subcorpora)
+    </p>
+    <p>
+      <strong>Reference</strong>
+      : Xun et al. (2015, 2016)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>BCC frequency per million characters</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_bcc_per_million</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Calculated from freq_bcc
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Normalised frequency per million characters in BCC
+    </p>
+    <p>
+      <strong>Calculation</strong>
+      : (freq_bcc / 9,500,000,000) × 1,000,000
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>BCC frequency level</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_level_bcc</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Calculated from freq_bcc
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Classification of high, medium, or low frequency based on tertile thresholds (33rd and 66th percentiles). See 
+      <code>freq_level</code>
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>CCL raw frequency</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_ccl</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : CCL (Peking University Center for Chinese Linguistics)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Raw token frequency in the CCL modern Chinese corpus
+    </p>
+    <p>
+      <strong>Corpus details</strong>
+      : 4.75 billion characters (modern Chinese portion of 2025 version); news, internet texts, literature, biographies, TV/movies, translations
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Frequency data obtained through batch query of CCL corpus interface
+    </p>
+    <p>
+      <strong>Reference</strong>
+      : Zhan et al. (2019)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>CCL frequency per million characters</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_ccl_per_million</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Calculated from freq_ccl
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Normalised frequency per million characters in CCL modern Chinese
+    </p>
+    <p>
+      <strong>Calculation</strong>
+      : (freq_ccl / 4,746,907,429) × 1,000,000
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>CCL frequency level</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_level_ccl</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Calculated from freq_ccl
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Classification of high, medium, or low frequency based on tertile thresholds (33rd and 66th percentiles). See 
+      <code>freq_level</code>
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>zhTenTen17 raw frequency</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_zhtenten</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : zhTenTen17 (Sketch Engine, 2025b)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Raw token frequency in the zhTenTen17 corpus
+    </p>
+    <p>
+      <strong>Corpus details</strong>
+      : 16.59 billion characters; simplified Chinese web texts covering diverse genres (compiled August and November-December 2017)
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Frequency data obtained through Sketch Engine batch query
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>zhTenTen17 frequency per million characters</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_zhtenten_per_million</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Calculated from freq_zhtenten
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Normalised frequency per million characters in zhTenTen17
+    </p>
+    <p>
+      <strong>Calculation</strong>
+      : (freq_zhtenten / 16,593,146,196) × 1,000,000
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>zhTenTen17 frequency level</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_level_zhtenten</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Calculated from freq_zhtenten
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Classification of high, medium, or low frequency based on tertile thresholds (33rd and 66th percentiles). See 
+      <code>freq_level</code>
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>GigaWord2 raw frequency</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_gigaword2</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : GigaWord 2 (Sketch Engine, 2025a)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Raw token frequency in the GigaWord 2 corpus
+    </p>
+    <p>
+      <strong>Corpus details</strong>
+      : 250.12 million characters; newswire texts (compiled 2005)
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Frequency data obtained through Sketch Engine batch query
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>GigaWord2 frequency per million characters</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_gigaword2_per_million</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Calculated from freq_gigaword2
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Normalised frequency per million characters in GigaWord 2
+    </p>
+    <p>
+      <strong>Calculation</strong>
+      : (freq_gigaword2 / 250,124,230) × 1,000,000
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>GigaWord2 frequency level</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_level_gigaword2</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Calculated from freq_gigaword2
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Classification of high, medium, or low frequency based on tertile thresholds (33rd and 66th percentiles). See 
+      <code>freq_level</code>
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>Overall frequency level</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_level</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Coded by researcher based on composite corpus frequencies
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Tripartite classification of expressions as high, medium or low frequency based on overall occurrence across four Chinese corpora: BCC, CCL, zhTenTen17, and GigaWord2
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : For each corpus, tertile thresholds (33rd and 66th percentiles) were calculated using the per-million-token frequencies of all expressions in the dataset. The tertile values were: BCC (33rd = 1.020, 66th = 2.935), CCL (33rd = 0.254, 66th = 0.791), zhTenTen17 (33rd = 0.255, 66th = 1.064), and GigaWord2 (33rd = 0.088, 66th = 0.793). Each expression was then classified as high, medium, or low frequency within each individual corpus based on these tertiles. The final freq_level value represents the modal category across all four corpora (i.e., whichever frequency level appeared most frequently across the four classifications). In cases where there was a tie between categories, a conservative approach was adopted: ties between high and medium defaulted to medium, ties between medium and low defaulted to medium, and ties between high and low (with no medium classifications) also defaulted to medium.
+    </p>
+    <p>
+      <strong>Note</strong>
+      : This composite measure aims to account for substantial variation in 
+      <em>chengyu</em>
+       prevalence and text types across different corpora while providing an interpretable summary measure. The three-level classification reflects the fact that this dataset is biased towards more recognisable and learner-relevant 
+      <em>chengyu</em>
+       suitable for research; a binary high/low classification risked mislabelling genuinely common expressions as 'low frequency' simply because they fell below the median of an already relatively high-frequency set. The tertile-based approach ensures that 'low frequency' is reserved for expressions that are genuinely rare within this collection.
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>Commonality (Jnqz)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>commonality_jnqz</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : 成语词典 (Jnqz, 2025)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Commonality or frequency of use indicator
+    </p>
+    <p>
+      <strong>Categories</strong>
+      : 常用成语 (common 
+      <em>chengyu</em>
+      ), 一般成语 (general/ordinary 
+      <em>chengyu</em>
+      )
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,000
+    </p>
+    <h4>Frequency log10 (Zheng et al. 2022)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>freq_log10_zheng2022</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zheng et al. (2022)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Log₁₀-transformed page count from Baidu.com
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : "We adopted Libben and Titone's (2008) method using the most popular Chinese website search engine [Baidu] as the dataset, and we employed the log-transformed page count to represent the whole-form frequency" (Zheng et al., 2022, pp. 5-6)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=24
+    </p>
+    <h3>Character-level information</h3>
+    <h4>Character 1, 2, 3, 4</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>char1</code>
+      , 
+      <code>char2</code>
+      , 
+      <code>char3</code>
+      , 
+      <code>char4</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Derived from expression
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : The four individual characters comprising the expression
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015
+    </p>
+    <h4>Character frequency ranks</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>char1_freq_rank</code>
+      , 
+      <code>char2_freq_rank</code>
+      , 
+      <code>char3_freq_rank</code>
+      , 
+      <code>char4_freq_rank</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Da (2004)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Frequency rank of each constituent character based on Jun Da's character frequency list
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=1,015 (char3_freq_rank: n=1,014 with no frequency information for 俱)
+    </p>
+    <h4>Total stroke number (Zheng et al. 2022)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>stroke_total_zheng2022</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zheng et al. (2022)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Total number of strokes across all four characters
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=24
+    </p>
+    <h2>Native speaker rating variables</h2>
+    <h3>RC 2 ratings (n=196 respondents)</h3>
+    <p>
+      All RC 2 measures used 5-point Likert-type scales administered via online questionnaire. Respondents were L1 Chinese adults (18+ years) who had at least middle school education and were familiar with the term 
+      <em>chengyu</em>
+      . Each respondent rated 25 randomly selected expressions from the 500-item pool.
+    </p>
+    <h4>Recognition rating (RC 2)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>recognition_mean_rc2</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : RC 2 (original data)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : How well respondents know and understand the expression
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point scale: 1=不知道,不理解 (don't know, don't understand) to 5=知道,理解 (know, understand)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=500
+    </p>
+    <h4>Chengyu acceptability rating (RC 2)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>chengyu_acceptability_mean_rc2</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : RC 2 (original data)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Whether respondents consider the expression to be a 
+      <em>chengyu</em>
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point Likert scale: 1=肯定不是 (definitely not a 
+      <em>chengyu</em>
+      ) to 5=肯定是 (definitely a 
+      <em>chengyu</em>
+      )
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=500
+    </p>
+    <h4>Literal compositionality rating (RC 2)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>compositionality_literal_mean_rc2</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : RC 2 (original data)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : The likelihood that someone unfamiliar with the expression but knowing the individual characters could derive its literal meaning (
+      <em>zimian yisi</em>
+       字面意思)
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point scale: 1=极不可能 (extremely unlikely) to 5=极有可能 (extremely likely)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=500
+    </p>
+    <h4>Semantic compositionality rating (RC 2)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>compositionality_semantic_mean_rc2</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : RC 2 (original data)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : The likelihood that someone unfamiliar with the expression but knowing the individual characters could derive its overall meaning (
+      <em>zhengti hanyi</em>
+       整体含义)
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point scale: 1=极不可能 (extremely unlikely) to 5=极有可能 (extremely likely)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=500
+    </p>
+    <h4>Character engagement rating (RC 2)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>character_engagement_mean_rc2</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : RC 2 (original data)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Whether respondents attend to the constituent characters when reading the expression and/or consider the constituent characters useful for meaning recall
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point scale: 1=不注意,想不起含义 (do not attend to characters, cannot recall meaning) to 5=注意,很有帮助 (attend to characters, very useful for meaning recall)
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=500
+    </p>
+    <h3>RC 3 experimental measures (n=59 participants)</h3>
+    <p>
+      RC 3 employed a timed binary judgement task where participants made rapid decisions about whether expressions were 
+      <em>chengyu</em>
+       or not. Participants were L1 Chinese adults (18+ years) who had at least middle school education and were familiar with the term 
+      <em>chengyu</em>
+      . Each participant judged 96 expressions (48 dictionary-listed 
+      <em>chengyu</em>
+       and 48 non-
+      <em>chengyu</em>
+      ) using keyboard responses.
+    </p>
+    <h4>Chengyu acceptability proportion (RC 3)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>chengyu_acceptability_prop_rc3</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : RC 3 (original data)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Proportion of participants who judged the expression as a 
+      <em>chengyu</em>
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : Keyboard response (A or L key, counterbalanced across participants). Participants with even subject numbers: A=is not 
+      <em>chengyu</em>
+      , L=is 
+      <em>chengyu</em>
+      ; odd subject numbers: reversed mapping
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Task instructions emphasised responding as quickly and accurately as possible to capture intuitive judgements
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=48 (subset of dictionary-listed 
+      <em>chengyu</em>
+      )
+    </p>
+    <h4>Dictionary agreement proportion (RC 3)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>dictionary_agreement_prop_rc3</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : RC 3 (derived variable)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Proportion of participants whose 
+      <em>chengyu</em>
+       judgement matched the authoritative dictionary classification
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : Binary (agrees/disagrees) for each participant, calculated post-hoc by comparing participant judgement to dictionary status, then aggregated as proportion
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=48
+    </p>
+    <h4>Reaction time (RC 3)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>reaction_time_ms_rc3</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : RC 3 (original data)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Mean time from expression presentation to keyboard response
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : Milliseconds. Overall mean RT=1,133ms, median RT=914ms. Outlier trials (&gt;4,000ms or &gt;3 SD from participant mean) excluded
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Fast RTs suggest predominantly intuitive rather than deliberative processing
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=48 expressions (averaged across 59 participants = 5,385 valid trials after outlier removal)
+    </p>
+    <h4>Reaction time log (RC 3)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>reaction_time_log_rc3</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : RC 3 (derived)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Log-transformed reaction times
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=48
+    </p>
+    <h4>Compositionality (RC 3)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>compositionality_rc3</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Coded by researcher
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Whether the expression's meaning can be derived from its constituent characters
+    </p>
+    <p>
+      <strong>Categories</strong>
+      : Binary (compositional vs noncompositional)
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Independent variable (stimulus characteristic) coded by researcher, not rated by participants
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=48 (RC 3 stimuli)
+    </p>
+    <h3>Published descriptive norms</h3>
+    <h4>Familiarity rating (Zheng 2019)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>familiarity_zheng2019</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zheng (2019)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : How often speakers encounter an idiom based on personal experience
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point Likert scale: 1=never heard, read, or produced; 5=heard, read, or produced very often
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=237
+    </p>
+    <h4>Meaningfulness rating (Zheng 2019)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>meaningfulness_zheng2019</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zheng (2019)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : How well speakers believe they know the figurative meaning
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point scale: 1=absolutely no idea what the idiom means; 5=100% certain of meaning and could explain explicitly
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=237
+    </p>
+    <h4>Compositionality rating (Zheng 2019)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>compositionality_zheng2019</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zheng (2019)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Extent to which literal meanings of constituent characters relate to overall figurative meaning
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point scale: 1=absolutely not decomposable; 5=completely decomposable. Participants received figurative definition alongside each item and rated whether constituent parts contribute to expression meaning
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Adopted from Bonin, Méot, &amp; Bugaiska (2013) approach
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=237
+    </p>
+    <h4>Compositionality mean (Zhang &amp; Ji 2016)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>compositionality_mean_zhangji2016</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zhang &amp; Ji (2016)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Mean rating of degree to which idiomatic meaning can be inferred from literal interpretation
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point scale: 1=not related; 5=very related. Forty informants assessed semantic relevance between refined literal interpretations and commonly-used idiomatic meanings
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=146
+    </p>
+    <h4>Literality rating (Zheng 2019)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>literality_zheng2019</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zheng (2019)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Possibility that an idiom could be used literally in the real world
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point scale: 1=absolutely not plausible; 5=completely plausible
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=237
+    </p>
+    <h4>Predictability rating (Zheng 2019)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>predictability_zheng2019</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zheng (2019)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Likelihood that speakers complete an idiom fragment idiomatically
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : Proportion of participants who completed three-character fragment (with last character missing) with the expected final character to form the idiom
+    </p>
+    <p>
+      <strong>Note</strong>
+      : Participants typed first word coming to mind to make phrase grammatical and meaningful
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=237
+    </p>
+    <h4>Register rating (Zheng 2019)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>register_zheng2019</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zheng (2019)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Which language register (written/formal or spoken/informal) the idiom belongs to
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : Binary: 1=written (formal) language; 0=spoken (informal) language
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=237
+    </p>
+    <h4>L2 knowledge rating (Zheng et al. 2022)</h4>
+    <p>
+      <strong>Variable name</strong>
+      : 
+      <code>l2_knowledge_rating_zheng2022</code>
+    </p>
+    <p>
+      <strong>Source</strong>
+      : Zheng et al. (2022)
+    </p>
+    <p>
+      <strong>Definition</strong>
+      : Likelihood that advanced L2 Chinese learners would know the idiom
+    </p>
+    <p>
+      <strong>Measurement</strong>
+      : 5-point scale rated by 33 experienced Chinese language teachers
+    </p>
+    <p>
+      <strong>Coverage</strong>
+      : n=24
+    </p>
+    <h2>Frequency corpus details</h2>
+    <p>Raw frequency data comes from four major Chinese corpora. Each corpus has different strengths and coverage patterns, which is why normalised frequency measures (per million characters) are provided to enable direct comparison. The composite frequency classification (for RC 3) used multiple sources to ensure robust categorisation.</p>
+    <h3>BCC (BLCU Chinese Corpus)</h3>
     <ul>
       <li>
-        <strong>Complete coverage (n=1,015)</strong>
-        : Core identifiers, frequency measures from four corpora, 
-        <em>xingshi</em>
-         patterns, constituent characters and their frequency ranks
+        <strong>Size</strong>
+        : 9.5 billion characters (Global wordlist combines: news 2 billion, literature 3 billion, comprehensive 1.9 billion, dialogue 600 million, plus classical Chinese and technology subcorpora)
       </li>
       <li>
-        <strong>Near complete coverage (n &gt; 977)</strong>
-        : Jnqz dictionary information (explanations, etymology, synonyms, antonyms, examples, usage notes, syntactic structure, sentiment, commonality indicator)
+        <strong>Content</strong>
+        : News, social media, literature, technology, blog
       </li>
       <li>
-        <strong>Substantial coverage (n=500)</strong>
-        : RC 2 ratings, Jiao et al. (2011) information
+        <strong>Year compiled</strong>
+        : 2019
       </li>
       <li>
-        <strong>Published norms (n=237-350)</strong>
-        : Zheng (2019), Zhang &amp; Ji (2016), Li et al. (2016) measures
+        <strong>Reference</strong>
+        : Xun et al. (2015, 2016)
       </li>
       <li>
-        <strong>Focused subsets (n=24-48)</strong>
-        : RC 3 experimental stimuli, Zheng et al. (2022) measures
+        <strong>URL</strong>
+        : 
+        <a href="http://bcc.blcu.edu.cn">http://bcc.blcu.edu.cn</a>
       </li>
     </ul>
-    <h3>Value of partial data</h3>
-    <p>Partial data serves multiple purposes:</p>
-    <ol>
-      <li>
-        <strong>Enrichment</strong>
-        : Even when available for only some expressions, additional measures provide valuable information for those items (e.g., etymology, example sentences, L2 familiarity)
-      </li>
-      <li>
-        <strong>Triangulation</strong>
-        : Multiple operationalisations of similar constructs (e.g., compositionality from RC 2, Zheng 2019, and Zhang &amp; Ji 2016) allow comparison across methods and populations
-      </li>
-      <li>
-        <strong>Gap identification</strong>
-        : Absent measures for certain expressions highlight opportunities for future research
-      </li>
-      <li>
-        <strong>Methodological diversity</strong>
-        : Different measurement approaches (rating scales, completion tasks, binary judgements, reaction times) provide converging evidence through complementary methodologies
-      </li>
-    </ol>
-    <h3>Using partial data</h3>
-    <p>When using this dataset:</p>
+    <h3>CCL (Peking University Center for Chinese Linguistics)</h3>
     <ul>
-      <li>Check coverage for your variables of interest</li>
-      <li>Document which subset you analyse</li>
-      <li>Consider whether missing data is random or systematic (e.g., RC 3 stimuli were selected to vary on specific dimensions)</li>
-      <li>Cite both this dataset and the original sources for any measures you use</li>
+      <li>
+        <strong>Size</strong>
+        : 4.75 billion characters (modern Chinese portion of 2024 version; total corpus including classical Chinese and bilingual texts: 6 billion characters)
+      </li>
+      <li>
+        <strong>Content</strong>
+        : News, internet texts, literature, biographies, TV/movies, translations
+      </li>
+      <li>
+        <strong>Year compiled</strong>
+        : 2024 version (earlier versions: 2003-2014)
+      </li>
+      <li>
+        <strong>Reference</strong>
+        : Zhan et al. (2019)
+      </li>
+      <li>
+        <strong>URL</strong>
+        : 
+        <a href="http://ccl.pku.edu.cn:8080/ccl_corpus">http://ccl.pku.edu.cn:8080/ccl_corpus</a>
+      </li>
     </ul>
+    <h3>zhTenTen17 (Chinese Web 2017)</h3>
+    <ul>
+      <li>
+        <strong>Size</strong>
+        : 16.59 billion tokens (13.53 billion words segmented, 667 million sentences, 40.23 million documents)
+      </li>
+      <li>
+        <strong>Content</strong>
+        : Simplified Chinese web texts covering diverse genres, topics, text types and sources
+      </li>
+      <li>
+        <strong>Year compiled</strong>
+        : August and November-December 2017
+      </li>
+      <li>
+        <strong>Source</strong>
+        : Jakubíček et al. (2013), Sketch Engine (2025b)
+      </li>
+      <li>
+        <strong>URL</strong>
+        : 
+        <a href="https://www.sketchengine.eu/zhtenten-chinese-corpus/">https://www.sketchengine.eu/zhtenten-chinese-corpus/</a>
+      </li>
+    </ul>
+    <h3>GigaWord 2 (Chinese Simplified Gigaword 2)</h3>
+    <ul>
+      <li>
+        <strong>Size</strong>
+        : 250.12 million tokens (205 million words segmented, 10.61 million sentences, 817,348 documents)
+      </li>
+      <li>
+        <strong>Content</strong>
+        : Newswire texts (96% stories, 4% other document types)
+      </li>
+      <li>
+        <strong>Year compiled</strong>
+        : 2005
+      </li>
+      <li>
+        <strong>Source</strong>
+        : Graff and Chen (2003), Sketch Engine (2025a)
+      </li>
+      <li>
+        <strong>URL</strong>
+        : 
+        <a href="https://catalog.ldc.upenn.edu/LDC2005T14">https://catalog.ldc.upenn.edu/LDC2005T14</a>
+      </li>
+    </ul>
+    <h3>Comparison and usage notes</h3>
+    <p>The four corpora differ substantially in:</p>
+    <ul>
+      <li>
+        <strong>Size</strong>
+        : zhTenTen17 and BCC are very large (&gt;9 billion characters); CCL is moderate (4.75 billion); GigaWord 2 is relatively small (250 million)
+      </li>
+      <li>
+        <strong>Text types</strong>
+        : BCC and CCL include diverse genres; zhTenTen17 focuses on web texts; GigaWord 2 is newswire only
+      </li>
+      <li>
+        <strong>Collection period</strong>
+        : Spans from 2002 (GigaWord 2) to 2019 (BCC), capturing language change over time
+      </li>
+      <li>
+        <strong>
+          Coverage of 
+          <em>chengyu</em>
+        </strong>
+        : Larger corpora generally have better coverage of lower-frequency 
+        <em>chengyu</em>
+        , but all four corpora have gaps
+      </li>
+    </ul>
+    <p>For these reasons, the normalised frequencies (per million characters) enable meaningful comparison across corpora, and the composite frequency classification used for RC 3 provides a more robust measure than any single corpus.</p>
+    <h2>References</h2>
+    <p>
+      "Chengyu Da Cidian" editorial board 《成语大词典》编委会 (Ed.). (2020). 
+      <em>Chengyu da cidian (caise ben)</em>
+       成语大词典 (彩色本) [
+      <em>Great dictionary of chengyu (colour version)</em>
+      ] (Xin xiuding ban 新修订版 [Rev. ed.]). Shangwu Yinshuguan 商务印书馆 [Commercial Press].
+    </p>
+    <p>
+      Da, J. (2004). A corpus-based study of character and bigram frequencies in Chinese e-texts and its implications for Chinese language instruction. In P. Zhang, T. Xie, &amp; J. Xu (Eds.), 
+      <em>The studies on the theory and methodology of the digitalized Chinese teaching to foreigners: Proceedings of the fourth international conference on new technologies in teaching and learning Chinese</em>
+       (pp. 501–511). Tsinghua University Press. 
+      <a href="https://lingua.mtsu.edu/academic/dajun-4thtech.pdf">https://lingua.mtsu.edu/academic/dajun-4thtech.pdf</a>
+    </p>
+    <p>
+      Davey, J. (2026a). 
+      <em>Chengyu dataset: Native speaker ratings and linguistic information</em>
+       [Data set]. Open Science Framework. 
+      <a href="https://doi.org/10.17605/OSF.IO/3TDA7">https://doi.org/10.17605/OSF.IO/3TDA7</a>
+    </p>
+    <p>
+      Davey, J. (2026b). 
+      <em>What makes a chengyu? Native speaker intuitions for categorising Chinese idiomatic expressions</em>
+       [Doctoral dissertation submitted for examination, Australian National University].
+    </p>
+    <p>
+      Dictionary Editing Office, Institute of Linguistics, Chinese Academy of Social Sciences 中国社会科学院语言研究所词典编辑室. (2014). 
+      <em>Xiandai Hanyu cidian</em>
+       现代汉语词典 [
+      <em>Contemporary Chinese dictionary</em>
+      ] (6th ed.). Shangwu Yinshuguan 商务印书馆 [Commercial Press].
+    </p>
+    <p>
+      Graff, D., &amp; Chen, K. (2003). 
+      <em>Chinese Gigaword LDC2003T09. Web Download.</em>
+       Linguistic Data Consortium. 
+      <a href="https://doi.org/10.35111/n069-0642">https://doi.org/10.35111/n069-0642</a>
+    </p>
+    <p>
+      Jakubíček, M., Kilgarriff, A., Kovář, V., Rychlý, P., &amp; Suchomel, V. (2013). The TenTen corpus family. In 
+      <em>7th International Corpus Linguistics Conference CL</em>
+       (pp. 125–127). 
+      <a href="https://www.sketchengine.eu/wp-content/uploads/The_TenTen_Corpus_2013.pdf">https://www.sketchengine.eu/wp-content/uploads/The_TenTen_Corpus_2013.pdf</a>
+    </p>
+    <p>
+      Jiao, L., Kubler, C. C., &amp; Zhang, W. (2011). 
+      <em>500 common Chinese idioms: An annotated frequency dictionary</em>
+      . Routledge.
+    </p>
+    <p>
+      Jnqz. (2025). 
+      <em>Chengyu cidian</em>
+       成语词典 [
+      <em>Chengyu dictionary</em>
+      ]. Jinan Di Qi Zhongxue Chengyu Wang 济南第七中学成语网 [Jinan No. 7 Middle School 
+      <em>chengyu</em>
+       website]. 
+      <a href="https://www.jnqz.cn/">https://www.jnqz.cn/</a>
+    </p>
+    <p>
+      Li, D., Zhang, Y., &amp; Wang, X. (2016). Descriptive norms for 350 Chinese idioms with seven syntactic structures. 
+      <em>Behavior Research Methods</em>
+      , 
+      <em>48</em>
+      (4), 1678–1693. 
+      <a href="https://doi.org/10.3758/s13428-015-0692-y">https://doi.org/10.3758/s13428-015-0692-y</a>
+    </p>
+    <p>
+      Liu, L., &amp; Cheung, H. T. (2014). Acquisition of Chinese quadra-syllabic idiomatic expressions: Effects of semantic opacity and structural symmetry. 
+      <em>First Language</em>
+      , 
+      <em>34</em>
+      (4), 336–353. 
+      <a href="https://doi.org/10.1177/0142723714544409">https://doi.org/10.1177/0142723714544409</a>
+    </p>
+    <p>
+      Liu Z. 刘振前, &amp; Xing M. 邢梅萍. (2000). Hanyu sizige chengyu yuyi jiegou de duichenxing he renzhi 汉语四字格成语语义结构的对称性和认知 [The semantic symmetrical features of four-character 
+      <em>chengyu</em>
+       in Chinese and their effects on cognition]. 
+      <em>Shijie Hanyu Jiaoxue</em>
+       世界汉语教学 [
+      <em>Chinese Teaching in the World</em>
+      ], 
+      <em>1</em>
+      , 77–81.
+    </p>
+    <p>
+      Pleco Inc. (2025). 
+      <em>Pleco Chinese dictionary</em>
+       (Version 3.2.76 Mobile app) [Computer software]. Apple App Store. 
+      <a href="https://apps.apple.com/us/app/pleco-chinese-dictionary/">https://apps.apple.com/us/app/pleco-chinese-dictionary/</a>
+    </p>
+    <p>
+      Sketch Engine. (2025a). 
+      <em>Chinese Gigaword corpus</em>
+      . 
+      <a href="https://www.sketchengine.eu/chinese-gigaword/">https://www.sketchengine.eu/chinese-gigaword/</a>
+    </p>
+    <p>
+      Sketch Engine. (2025b). 
+      <em>ZhTenTen – Chinese corpus from the web</em>
+      . 
+      <a href="https://www.sketchengine.eu/zhtenten-chinese-corpus">https://www.sketchengine.eu/zhtenten-chinese-corpus</a>
+    </p>
+    <p>
+      Xun, E. 荀恩东, Rao, G. 饶高琦, Xiao, X. 肖晓悦, &amp; Zang, J. 臧娇娇. (2016). Dashuju Beijingxia BCC yuliaoku de yanzhi 大数据背景下BCC语料库的研制 [The construction of the BCC corpus in the age of big data]. 
+      <em>Yuliaoku Yuyanxue</em>
+       语料库语言学 [
+      <em>Corpus Linguistics</em>
+      ], 
+      <em>3</em>
+      (1), 93–118.
+    </p>
+    <p>
+      Xun, E. 荀恩东, Rao, G. 饶高琦, Xie, J. 谢佳丽, &amp; Huang, Z. 黄志斌. (2015). Xiandai Hanyu cihui lishi jiansuo xitong de jianshe yu yingyong 现代汉语词汇历时检索系统的建设与应用 [Diachronic retrieval for modern Chinese word: System construction and its application]. 
+      <em>Zhongwen Xinxi Xuebao</em>
+       中文信息学报 [
+      <em>Chinese Journal of Information Processing</em>
+      ], 
+      <em>29</em>
+      (3), 169–176.
+    </p>
+    <p>
+      Zdic 汉典. (2025). 
+      <a href="https://www.zdic.net/">https://www.zdic.net/</a>
+    </p>
+    <p>
+      Zhan, W. 詹卫东, Guo, R. 郭锐, Chang, B. 常宝宝, Chen, Y. 陈怡然, &amp; Chen, L. 陈龙. (2019). Beijing daxue CCL yuliaoku de yanzhi 北京大学CCL语料库的研制 [The building of the CCL corpus: Its design and implementation]. 
+      <em>Yuliaoku Yuyanxue</em>
+       语料库语言学 [
+      <em>Corpus Linguistics</em>
+      ], 
+      <em>6</em>
+      (1), 71-86+116.
+    </p>
+    <p>
+      Zhang, H., &amp; Ji, F. (2016). Compositionality as a prototypical category: Classifying Chinese four-character idioms. 
+      <em>Language and Cognitive Science</em>
+      , 
+      <em>2</em>
+      (1), 69–97. 
+      <a href="https://doi.org/10.35534/LCS201602004">https://doi.org/10.35534/LCS201602004</a>
+    </p>
+    <p>
+      Zheng, H. (2019). 
+      <em>The processing of two types of Chinese idioms by L1 and L2 speakers</em>
+       [Doctoral dissertation, University of Illinois at Urbana-Champaign]. 
+      <a href="https://hdl.handle.net/2142/105181">https://hdl.handle.net/2142/105181</a>
+    </p>
+    <p>
+      Zheng, H., Hu, B., &amp; Xu, J. (2022). The development of formulaic knowledge in super-advanced Chinese language learners: Evidence from processing accuracy, speed, and strategies. 
+      <em>Frontiers in Psychology</em>
+      , 
+      <em>13</em>
+      , 796784. 
+      <a href="https://doi.org/10.3389/fpsyg.2022.796784">https://doi.org/10.3389/fpsyg.2022.796784</a>
+    </p>
     <div class="footer">
-      <p>For the complete variable list with full descriptions, please download the dataset or refer to the accompanying documentation files.</p>
+      <p>Dataset version 1.0 | Last updated: 19/01/2026</p>
     </div>
   </div>
 </body>
