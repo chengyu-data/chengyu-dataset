@@ -18,7 +18,7 @@ This repository provides linguistic information and native speaker ratings for 1
 
 When using this dataset, please cite:
 
-> Davey, J. (2026a). *Chengyu dataset: Information and native speaker ratings* [Data set]. Open Science Framework. [https://doi.org/10.17605/OSF.IO/3TDA7](https://doi.org/10.17605/OSF.IO/3TDA7)
+> Davey, J. (2026a). *Chengyu dataset: Information and native speaker ratings* [Dataset]. OSF. [https://doi.org/10.17605/OSF.IO/3TDA7](https://doi.org/10.17605/OSF.IO/3TDA7)
 
 ### Primary research
 
@@ -69,14 +69,10 @@ This dataset is licensed under a [Creative Commons Attribution-NonCommercial 4.0
 ```
 chengyu-dataset/
 ├── README.md                          # This file
-├── data/
-│   └── Chengyu dataset.xlsx          # Full dataset (67 variables × 1,015 expressions)
 ├── docs/                              # GitHub Pages site files
 │   ├── index.html                     # Project overview
 │   ├── data-browser.html              # Interactive datatable
-│   └── documentation.html             # Full documentation
-└── scripts/
-    └── create_github_pages.R          # R script to generate HTML files
+│   └── documentation.html             # Documentation
 ```
 
 ## Data availability
@@ -98,4 +94,4 @@ For questions about this dataset or to report errors, please [open an issue](../
 
 ---
 
-*Dataset version 1.0 | Last updated: 16/01/2026*
+*Dataset version 1.0 | Last updated: 19/01/2026*
