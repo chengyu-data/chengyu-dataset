@@ -3,7 +3,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.17605/OSF.IO/3TDA7-blue.svg)](https://doi.org/10.17605/OSF.IO/3TDA7)
 [![License: CC-BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-This repository provides linguistic information and native speaker ratings for 1,015 *chengyu* 成语 'Chinese idiomatic expressions', compiled as part of PhD research (Davey, 2026b) investigating how first-language Chinese users understand and categorise *chengyu*.  
+This repository provides linguistic information and native speaker ratings for 1,015 *chengyu* 成语 'Chinese idiomatic expressions', compiled as part of PhD research (Ganon-Davey, 2026) investigating how first-language Chinese users understand and categorise *chengyu*.  
 
 ## Quick links
 
@@ -18,15 +18,15 @@ This repository provides linguistic information and native speaker ratings for 1
 
 When using this dataset, please cite:
 
-> Davey, J. (2026a). *Chengyu dataset: Information and native speaker ratings* [Dataset]. OSF. [https://doi.org/10.17605/OSF.IO/3TDA7](https://doi.org/10.17605/OSF.IO/3TDA7)
+> Davey, J. (2026). *Chengyu 成语 dataset: Native speaker intuitions for categorising Chinese idiomatic expressions* [Dataset]. OSF. [https://doi.org/10.17605/OSF.IO/3TDA7](https://doi.org/10.17605/OSF.IO/3TDA7)
 
 ### Primary research
 
 This dataset was compiled as part of the following PhD research:
 
-> Davey, J. (2026b). *What makes a *chengyu*? Native speaker intuitions for categorising Chinese idiomatic expressions* [Doctoral dissertation submitted for examination, Australian National University].
+> Ganon-Davey, J. (2026). *What makes a *chengyu*? Native speaker intuitions for categorising Chinese idiomatic expressions* [PhD thesis, Australian National University]. ANU Open Research Repository. [https://doi.org/10.25911/XSK9-E083](https://doi.org/10.25911/XSK9-E083)
 
-When reporting findings based on this dataset, please cite the dataset itself (above). The thesis citation provides theoretical and methodological context for the research design and data collection.
+When reporting findings based on this dataset, please cite the dataset itself (Davey, 2026). The thesis citation (Ganon-Davey, 2026) provides theoretical and methodological context for the research design and data collection.
 
 ### Citing data subsets
 
@@ -38,7 +38,7 @@ This dataset is licensed under a [Creative Commons Attribution-NonCommercial 4.0
 
 ## Dataset contents
 
-### Original empirical data (Davey, 2026b)
+### Original empirical data (Ganon-Davey, 2026)
 - Native speaker ratings (n=196 respondents) for recognition, *chengyu* acceptability, compositionality, and character engagement
 - Experimental acceptability judgements (n=59 participants) with reaction times
 
@@ -57,7 +57,7 @@ This dataset is licensed under a [Creative Commons Attribution-NonCommercial 4.0
 
 ## Key research findings
 
-*Chengyu* 成语 (literally 'set phrases') are conventionalised four-character expressions that often derive from classical Chinese texts, historical events, or stories. This PhD research (Davey, 2026b) provides empirical evidence that native speakers conceptualise *chengyu* differently than dictionaries suggest, revealing *chengyu* to be a culturally negotiated category with flexible boundaries.
+*Chengyu* 成语 (literally 'set phrases') are conventionalised four-character expressions that often derive from classical Chinese texts, historical events, or stories. This PhD research (Ganon-Davey, 2026) provides empirical evidence that native speakers conceptualise *chengyu* differently than dictionaries suggest, revealing *chengyu* to be a culturally negotiated category with flexible boundaries.
 
 - **Dictionary classifications don't predict native speaker judgements**: Dictionary-listed *chengyu* were rejected 40% of the time
 - **Semantic opacity matters**: Transparent compositional meanings reduce *chengyu* acceptance
@@ -86,7 +86,7 @@ This dataset is made freely available for non-commercial research and educationa
 
 ## Contact
 
-**Compiled by**: Janet Davey  
+**Compiled by**: Janet Ganon-Davey  
 **Email**: main.gem4761@fastmail.com  
 **Institution**: Australian National University
 
@@ -94,4 +94,4 @@ For questions about this dataset or to report errors, please [open an issue](../
 
 ---
 
-*Dataset version 1.0 | Last updated: 19/01/2026*
+*Dataset version 1.1 | Last updated: 05/06/2026*
