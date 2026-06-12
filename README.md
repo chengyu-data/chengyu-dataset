@@ -3,7 +3,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.17605/OSF.IO/3TDA7-blue.svg)](https://doi.org/10.17605/OSF.IO/3TDA7)
 [![License: CC-BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-This repository provides linguistic information and native speaker ratings for 1,015 *chengyu* 成语 'Chinese idiomatic expressions', compiled as part of PhD research (Ganon-Davey, 2026) investigating how first-language Chinese users understand and categorise *chengyu*.  
+This repository provides linguistic information and native speaker ratings for 1,015 *chengyu*-like expressions, compiled as part of PhD research (Ganon-Davey, 2026) investigating how first-language Chinese users understand and categorise *chengyu* 成语 'Chinese idiomatic expressions'.  
 
 ## Quick links
 
